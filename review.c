@@ -88,18 +88,16 @@ void kiemTraTatCaLe(int arr[], int size) {
     printf("Kiem tra tat ca phan tu la so le\n");
     if(kiemTraMangRong(size)) return;
 
-    int tatCaLe = 1;
+    // Duyet tung phan tu
     for(int i = 0; i < size; i++) {
         if(arr[i] % 2 == 0) {
-            tatCaLe = 0;
+            printf("Khong phai tat ca phan tu la so le!\n");
+            return;
         }
     }
 
-    if(tatCaLe == 1) {
-        printf("Tat ca phan tu deu la so le!\n");
-    } else {
-        printf("Khong phai tat ca phan tu la so le!\n");
-    }
+    // Chi chay den day neu tat ca la so le
+    printf("Tat ca phan tu deu la so le!\n");
 }
 
 // Function 5: Tim kiem gia tri
